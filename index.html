@@ -32,67 +32,61 @@
 
 <p>
   This policy describes the data handled by the <strong>Remora Pilot</strong>
-  mobile application, published by Sentiens (&ldquo;we&rdquo;), when you use
-  it to sign in and operate a Remora device over Bluetooth Low Energy (BLE).
+  mobile app, published by Sentiens (&ldquo;we&rdquo;), when you use it to
+  sign in and connect to a Remora device via Bluetooth.
 </p>
 
 <h2>Data we collect</h2>
 <ul>
   <li>
-    <strong>Sign-in credentials</strong>: your account (tenant) identifier,
-    username and password, entered when signing in. This information is
-    transmitted over an encrypted connection (HTTPS) to our platform
-    to authenticate your install and issue an access
-    certificate. Your password is never stored on the device — only the
-    certificate resulting from enrollment is kept.
+    <strong>Account credentials</strong>: your account ID, username, and
+    password, entered when you sign in. This is sent securely to verify your
+    identity and grant you access. Your password is never stored on the
+    device.
   </li>
   <li>
-    <strong>Install cryptographic identity</strong>: a keypair generated
-    locally on your device, and the certificate issued by our platform.
-    These are stored exclusively in the operating system's secure keychain
-    (iOS Keychain / Android Keystore), never in unencrypted storage.
+    <strong>Device connection data</strong>: to securely connect to your
+    Remora device, the app creates and stores a unique security key on your
+    device, kept in your device's built-in secure storage — it never leaves
+    your device unencrypted.
   </li>
   <li>
-    <strong>Bluetooth (BLE) data</strong>: once paired with a Remora device,
-    the app exchanges operational data with it (connection state, network,
-    system status) needed to operate the device. This exchange happens
-    directly between the app and the physical device.
+    <strong>Bluetooth data</strong>: while connected to a Remora device, the
+    app exchanges the technical information needed to operate it.
   </li>
   <li>
-    <strong>System permissions</strong>: the app requests Bluetooth
-    (scan/connect) permissions and, on Android, location — the latter is
-    required by the OS for Bluetooth scanning and is not used to track your
-    location.
+    <strong>Permissions</strong>: the app requests Bluetooth access, and on
+    Android, location access — required by Android for Bluetooth to
+    function, not used to track your location.
   </li>
 </ul>
 
 <h2>What we don't do</h2>
 <ul>
   <li>We do not display any advertising in the app.</li>
-  <li>We do not integrate any third-party analytics or tracking tools.</li>
+  <li>We do not use any third-party analytics or tracking tools.</li>
   <li>We do not sell or share your data with third parties for commercial purposes.</li>
 </ul>
 
 <h2>Data sharing</h2>
 <p>
-  The data described above is only sent to our own infrastructure,
-  required for the app to function, and to the Remora
-  device you connect to. No data is shared with third parties outside this
-  scope.
+  The information above is only used to connect you to our services and to
+  your Remora device. We do not share it with any third party outside of
+  what's needed to operate the app.
 </p>
 
 <h2>Retention and deletion</h2>
 <p>
-  Identification data remains associated with your account while it is
-  active. To request deletion of your account or data, contact your
-  administrator or write to us at the address below.
+  Your data remains associated with your account while it is active. To
+  request deletion of your account or data, contact your administrator or
+  write to us at the address below.
 </p>
 
 <h2>Security</h2>
 <p>
-  All communication with our platform is encrypted (HTTPS). The app's
-  cryptographic keys and certificates never leave the operating system's
-  secure keychain.
+  All communication with our services is encrypted. Your device's security
+  keys are stored using its built-in secure storage and never leave it
+  unencrypted.
 </p>
 
 <h2>Contact</h2>
